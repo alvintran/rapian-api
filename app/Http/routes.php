@@ -38,14 +38,14 @@ $api->version('v1', function($api) {
  * @param  string $controller
  * @return void
  */
-function resources($uri, $controller, \Dingo\Api\Routing\Router $api)
-{
-	$api->get($uri, 'App\\Http\\Controllers\\V1\\'. $controller.'@index');
-	$api->get($uri.'/create', 'App\\Http\\Controllers\\V1\\'. $controller.'@create');
-	$api->post($uri, 'App\\Http\\Controllers\\V1\\'. $controller.'@store');
-	$api->get($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@show');
-	$api->get($uri.'/{id}/edit', 'App\\Http\\Controllers\\V1\\'. $controller.'@edit');
-	$api->put($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@update');
-	$api->patch($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@update');
-	$api->delete($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@destroy');
-}
+// function resources($uri, $controller, \Dingo\Api\Routing\Router $api)
+// {
+// 	$api->get($uri, 'App\\Http\\Controllers\\V1\\'. $controller.'@index');
+// 	$api->get($uri.'/create', 'App\\Http\\Controllers\\V1\\'. $controller.'@create');
+// 	$api->post($uri, 'App\\Http\\Controllers\\V1\\'. $controller.'@store');
+// 	$api->get($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@show');
+// 	$api->get($uri.'/{id}/edit', 'App\\Http\\Controllers\\V1\\'. $controller.'@edit');
+// 	$api->put($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@update');
+// 	$api->patch($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@update');
+// 	$api->delete($uri.'/{id}', 'App\\Http\\Controllers\\V1\\'. $controller.'@destroy');
+// }
