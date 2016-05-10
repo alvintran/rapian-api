@@ -21,7 +21,7 @@ class UserController extends Controller
 
     /**
      * Resource model
-     * @var Eloquent - required
+     * @var Eloquent required
      */
     protected $model;
 

@@ -3,6 +3,13 @@
 class TestCase extends Laravel\Lumen\Testing\TestCase
 {
     /**
+     * The base URL to use while testing the application.
+     *
+     * @var string
+     */
+	protected $baseUrl = 'http://api.rapian.lc';
+
+    /**
      * Creates the application.
      *
      * @return \Laravel\Lumen\Application
